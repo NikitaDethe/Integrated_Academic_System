@@ -1,0 +1,25 @@
+<app-menu></app-menu>
+
+<table class="table">
+  <thead>
+    <tr class="table-info">
+      <th scope="col">ID</th>
+      <th scope="col">NAME</th>
+      
+      <th scope="col">ACTION</th>
+    </tr>
+  </thead>
+  <tbody *ngFor=" let s of subjects">
+    <tr class="table-secondary">
+      <td>{{s.id}}</td>
+      <td>{{s.name}}</td>
+      
+      <td>
+        <button class="btn btn-success">Edit</button>
+        &nbsp;
+        <button class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>

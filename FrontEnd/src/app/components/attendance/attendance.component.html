@@ -1,0 +1,45 @@
+<app-menu></app-menu>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Search</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="search-bar">
+            <label for="subject">Select Subject:</label>
+            <select id="subject">
+                <option value="" disabled selected>Select Subject</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <!-- Add more options here -->
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" placeholder="dd-mm-yyyy">
+
+            <button type="button" class="search-btn">Search</button>
+        </div>
+
+        <table class="attendance-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Faculty Name</th>
+                    <th>Subject Name</th>
+                    <th>Date Time</th>
+                    <th>Count</th>
+                    <th>Student Names</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
